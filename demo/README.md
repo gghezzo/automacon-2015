@@ -86,7 +86,7 @@ kubectl exec <pod> -- uname -a
 #### Terminal 1
 
 ```
-kubectl rolling-update --update-period=1s --image=nginx:1.9.4 nginx
+kubectl rolling-update --update-period=500ms --image=nginx:1.9.4 nginx
 ```
 
 #### Terminal 2
@@ -98,7 +98,7 @@ while true; do curl -si http://<node-public-ip>:36000 | grep Server; sleep .5; d
 #### Terminal 3
 
 ```
-kubectl get events --watch-only
+kubectl get pods --watch-only
 ```
 
 ## Resource utilization
