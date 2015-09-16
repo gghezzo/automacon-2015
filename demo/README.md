@@ -125,6 +125,10 @@ kubectl describe quota prod
 ```
 
 ```
+cat pods/nginx.yaml
+```
+
+```
 kubectl create -f pods/nginx.yaml 
 ```
 
