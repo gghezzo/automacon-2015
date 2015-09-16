@@ -139,6 +139,10 @@ kubectl create -f pods/nginx.yaml
 ```
 
 ```
+cat pods/nginx-custom.yaml 
+```
+
+```
 kubectl create -f pods/nginx-custom.yaml
 ```
 
