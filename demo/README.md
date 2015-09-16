@@ -174,7 +174,7 @@ kubectl create -f limits/prod.yaml
 kubectl describe limits prod
 ```
 
-Create pods without resources:
+#### Create pods without resources
 
 ```
 kubectl create -f rc/nginx.yaml
@@ -200,7 +200,7 @@ kubectl scale rc nginx --replicas=10
 kubectl describe quota prod
 ```
 
-Create pod that won't fit:
+#### Create a pod that won't fit
 
 ```
 cat pods/nginx-custom.yaml
