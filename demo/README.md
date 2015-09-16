@@ -200,6 +200,8 @@ kubectl scale rc nginx --replicas=10
 kubectl describe quota prod
 ```
 
+Create pod that won't fit:
+
 ```
 cat pods/nginx-custom.yaml
 ```
