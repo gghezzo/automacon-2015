@@ -92,7 +92,7 @@ kubectl rolling-update --update-period=1s --image=nginx:1.9.4 nginx
 #### Terminal 2
 
 ```
-while true; do curl -si http://104.154.69.144:36000 | grep Server; sleep .5; done
+while true; do curl -si http://<node-public-ip>:36000 | grep Server; sleep .5; done
 ```
 
 #### Terminal 3
