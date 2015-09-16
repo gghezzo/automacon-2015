@@ -16,7 +16,7 @@ spec:
         cpu: 0.1
         memory: 200M
       max:
-        cpu: 1
+        cpu: 4
         memory: 4G
       min:
         cpu: 0.1

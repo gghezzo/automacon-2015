@@ -191,21 +191,17 @@ kubectl describe quota prod
 ```
 
 ```
-cat rc/nginx-large.yaml
+cat pods/nginx-custom.yaml
 ```
 
 ```
-kubectl create -f rc/nginx-large.yaml
-```
-
-```
-kubectl describe quota prod
-```
-
-```
-kubectl scale rc nginx-large --replicas=5
+kubectl create -f pods/nginx-custom.yaml
 ```
 
 ```
 kubectl describe quota prod
+```
+
+```
+kubectl get events --watch
 ```

@@ -13,5 +13,5 @@ spec:
       protocol: TCP
     resources:
       limits:
-        cpu: 4
+        cpu: 3.5
         memory: 2G
