@@ -35,7 +35,11 @@ kubectl get pods --watch-only
 ### Create the nginx service
 
 ```
-kubectl create -f services/nginx
+cat services/nginx.yaml
+```
+
+```
+kubectl create -f services/nginx.yaml
 ```
 
 ```
