@@ -101,6 +101,12 @@ while true; do curl -si http://<node-public-ip>:36000 | grep Server; sleep .5; d
 kubectl get pods --watch-only
 ```
 
+#### Clean up
+
+```
+kubectl delete rc nginx
+```
+
 ## Resource utilization
 
 Let the games begin!
