@@ -1,13 +1,5 @@
 # AutomaCon Demo
 
-## Setup
-
-### Terminal 3
-
-```
-kubectl get events --watch-only
-```
-
 ## Automated Deployments
 
 ```
