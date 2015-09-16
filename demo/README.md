@@ -118,6 +118,8 @@ Let the games begin!
 
 ### Resource quotas
 
+Create the prod qouta. 
+
 ```
 cat quotas/prod.yaml
 ```
@@ -130,6 +132,8 @@ kubectl create -f quotas/prod.yaml
 kubectl describe quota prod
 ```
 
+Create a pod that violates quota rules:
+
 ```
 cat pods/nginx.yaml
 ```
@@ -137,6 +141,8 @@ cat pods/nginx.yaml
 ```
 kubectl create -f pods/nginx.yaml 
 ```
+
+Create a pod with resources:
 
 ```
 cat pods/nginx-custom.yaml 
@@ -154,6 +160,8 @@ kubectl describe quota prod
 kubectl delete pods nginx-custom
 ```
 
+### Limits
+
 ```
 cat limits/prod.yaml
 ```
@@ -165,6 +173,8 @@ kubectl create -f limits/prod.yaml
 ```
 kubectl describe limits prod
 ```
+
+Create pods without resources:
 
 ```
 kubectl create -f rc/nginx.yaml
