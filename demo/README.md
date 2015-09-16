@@ -3,6 +3,14 @@
 ## Automated Deployments
 
 ```
+kubectl get pods,rc,svc
+```
+
+```
+cat rc/nginx.yaml
+```
+
+```
 kubectl create -f rc/nginx.yaml
 ```
 
