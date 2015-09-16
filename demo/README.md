@@ -155,6 +155,10 @@ kubectl delete pods nginx-custom
 ```
 
 ```
+cat limits/prod.yaml
+```
+
+```
 kubectl create -f limits/prod.yaml
 ```
 
