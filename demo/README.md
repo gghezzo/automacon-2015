@@ -217,3 +217,21 @@ kubectl describe quota prod
 ```
 kubectl get events --watch
 ```
+
+#### Add more resources to the cluster
+
+```
+cat nodes/node3.yaml
+```
+
+```
+kubectl create -f nodes/node3.yaml
+```
+
+```
+kubectl get events --watch
+```
+
+```
+kubectl get pods
+```
