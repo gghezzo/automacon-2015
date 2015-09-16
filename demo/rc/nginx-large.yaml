@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  labels:
+    app: nginx
+    size: large
+  name: nginx-large
+  namespace: prod
+spec:
+  replicas: 1
+  selector:
+    app: nginx
+    size: large
+  template:
+    metadata:
+      labels:
+        app: nginx
+        size: large
+    spec:
+      containers:
+      - image: nginx:1.7.9
+        name: nginx
+        ports:
+        - containerPort: 80
+          protocol: TCP
+        resources:
+          limits:
+            cpu: 1
+            memory: 2G
