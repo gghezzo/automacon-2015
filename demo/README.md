@@ -183,7 +183,15 @@ kubectl describe quota prod
 ```
 
 ```
-kubectl scale rc nginx --replicas=20
+kubectl scale rc nginx --replicas=10
+```
+
+```
+kubectl describe quota prod
+```
+
+```
+cat rc/nginx-large.yaml
 ```
 
 ```
@@ -191,5 +199,13 @@ kubectl create -f rc/nginx-large.yaml
 ```
 
 ```
+kubectl describe quota prod
+```
+
+```
 kubectl scale rc nginx-large --replicas=5
+```
+
+```
+kubectl describe quota prod
 ```
