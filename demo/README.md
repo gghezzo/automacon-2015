@@ -163,7 +163,19 @@ kubectl create -f limits/prod.yaml
 ```
 
 ```
+kubectl describe limits prod
+```
+
+```
 kubectl create -f rc/nginx.yaml
+```
+
+```
+kubectl get pods
+```
+
+```
+kubectl describe pods <pod>
 ```
 
 ```
