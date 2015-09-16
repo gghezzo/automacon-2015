@@ -189,7 +189,7 @@ kubectl describe quota prod
 ```
 
 ```
-kubectl scale rc nginx --replicas=10
+kubectl scale rc nginx --replicas=20
 ```
 
 ```
