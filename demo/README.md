@@ -36,6 +36,10 @@ Scale out
 kubectl scale rc nginx --replicas=5
 ```
 
+```
+kubectl get pods --watch-only
+```
+
 ### Create the nginx service
 
 ```
@@ -65,7 +69,7 @@ kubectl describe svc nginx
 #### Working with pods
 
 ```
-boom -n 1000 -c 10 http://104.154.69.144:36000
+boom -n 10000 -c 10 http://<node-public-ip>:36000
 ```
 
 ```
